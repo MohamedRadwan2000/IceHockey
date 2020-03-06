@@ -126,7 +126,16 @@ class icehockeyTest {
                 };
         assertArrayEquals(expected, actual);
     }
-
+    @Test
+ void test6() {
+        icehockey pr = new icehockey();
+        java.awt.Point[] actual = pr.findPlayers(new String[]{"5"}, 5, 4);
+        java.awt.Point[] expected = new java.awt.Point[]
+                {
+                        new java.awt.Point(1, 1),
+                };
+        assertArrayEquals(expected, actual);
+    }
     @Test
     void test_empty_array_handle(){
             icehockey x=new icehockey();
